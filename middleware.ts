@@ -18,21 +18,21 @@ export const config = {
      * - favicon.ico (favicon file)
      */
     {
-      source: '/((?!api|_next/static|_next/image|favicon.ico|assets).*)',
+      source: '/((?!api|_next/static|_next/image|favicon.ico|assets|robots/txt).*)',
       missing: [
         { type: 'header', key: 'next-router-prefetch' },
         { type: 'header', key: 'purpose', value: 'prefetch' },
       ],
     },
     {
-      source: '/((?!api|_next/static|_next/image|favicon.ico|assets).*)',
+      source: '/((?!api|_next/static|_next/image|favicon.ico|assets|robots/txt).*)',
       has: [
         { type: 'header', key: 'next-router-prefetch' },
         { type: 'header', key: 'purpose', value: 'prefetch' },
       ],
     },
     {
-      source: '/((?!api|_next/static|_next/image|favicon.ico|assets).*)',
+      source: '/((?!api|_next/static|_next/image|favicon.ico|assets|robots/txt).*)',
       has: [{ type: 'header', key: 'x-present' }],
       missing: [{ type: 'header', key: 'x-missing', value: 'prefetch' }],
     },
