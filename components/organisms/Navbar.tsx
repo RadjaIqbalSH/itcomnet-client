@@ -25,7 +25,7 @@ const Navbar: FC<INavbar> = (props) => {
     <div className='container mx-auto px-6 sticky top-6 z-50'>
       <div className='px-8 md:px-14 py-4 rounded-full flex flex-row justify-between items-center' style={{backgroundColor:"rgba(255, 255, 255, 0.8)"}}>
         <div className='relative w-5 h-5 md:w-7 md:h-7 z-50' >
-          <Image src="/assets/images/itcomnet-logo.webp" fill alt="itcomnet"/>
+          <Image src={`${process.env.NEXT_PUBLIC_ROOT}/assets/images/itcomnet-logo.webp`} fill alt="itcomnet"/>
         </div>
         <div className='font-clashgrotesk-md hidden lg:flex flex-row items-center gap-x-4'>
           <button className='custom-button px-4 py-2 rounded-md transition-all duration-300 hover:bg-gray-100' style={{color: "#344054"}} onClick={onClickMenu.bind(null, "home")}>Home</button>
