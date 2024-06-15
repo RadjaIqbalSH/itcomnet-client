@@ -11,6 +11,10 @@ const TemplateLayout:FC<ITemplateLayout> = (props) => {
   return (
     <div id='home' className='h-full relative'>
       <Head>
+        <link
+          rel="icon"
+          href={`${process.env.NEXT_PUBLIC_ROOT}/assets/images/itcomnet-logo.jpeg`}
+        />
         <meta name="author" content="Itcomnet" />
         <meta name="title" content="Itcomnet" />
         <meta name="keywords" content="itcomnet, indohadetama" />
