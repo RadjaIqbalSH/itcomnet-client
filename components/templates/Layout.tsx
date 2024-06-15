@@ -13,7 +13,7 @@ const TemplateLayout:FC<ITemplateLayout> = (props) => {
       <Head>
         <link
           rel="icon"
-          href={`${process.env.NEXT_PUBLIC_ROOT}/assets/images/itcomnet-logo.jpeg`}
+          href={`${process.env.NEXT_PUBLIC_ROOT}/assets/images/itcomnet-logo.webp`}
         />
         <meta name="author" content="Itcomnet" />
         <meta name="title" content="Itcomnet" />
